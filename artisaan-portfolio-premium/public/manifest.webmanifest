@@ -1,0 +1,16 @@
+{
+  "name": "Artisaan — Crafting beautifully engineered Android apps",
+  "short_name": "Artisaan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#38bdf8",
+  "description": "Artisaan builds premium Android experiences with meticulous craftsmanship.",
+  "icons": [
+    {
+      "src": "https://assets.website-files.com/63f5d0d628c17a6f6c9f1ee1/63f5d1540712faa3070c4c7f_favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
