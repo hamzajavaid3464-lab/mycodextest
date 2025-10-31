@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://artisaan.app/sitemap.xml
