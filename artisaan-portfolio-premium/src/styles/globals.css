@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 3%;
+  --foreground: 210 40% 98%;
+  --muted: 224 15% 25%;
+  --accent: 188 100% 82%;
+  --primary: 188 90% 60%;
+  --primary-foreground: 210 40% 10%;
+  --secondary: 232 25% 18%;
+  --secondary-foreground: 210 40% 96%;
+  --border: 224 15% 20%;
+  --input: 224 15% 20%;
+  --ring: 188 100% 70%;
+  --card: 228 35% 6%;
+  --card-foreground: 210 40% 96%;
+  --radius: 1.5rem;
+  --noise-overlay: url('https://grainy-gradients.vercel.app/noise.svg');
+}
+
+[data-theme='light'] {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 214 32% 91%;
+  --accent: 200 100% 45%;
+  --primary: 199 89% 48%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222 47% 11%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 199 89% 48%;
+  --card: 210 40% 99%;
+  --card-foreground: 222 47% 13%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+  background-image: radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.25), transparent 50%),
+    radial-gradient(circle at 80% 0%, rgba(139, 92, 246, 0.25), transparent 55%),
+    var(--noise-overlay, none);
+}
+
+::selection {
+  @apply bg-primary text-primary-foreground;
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 4px;
+}
+
+.prose :where(pre):not(:where([class~="not-prose"] *)) {
+  @apply bg-secondary text-secondary-foreground rounded-2xl px-6 py-4 shadow-glow;
+}
+
+.prose code {
+  @apply font-mono text-sm;
+}
+
+.prose a {
+  @apply text-primary underline underline-offset-4 hover:no-underline;
+}
+
+.fade-border {
+  position: relative;
+}
+
+.fade-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.45), rgba(59, 130, 246, 0.1));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
