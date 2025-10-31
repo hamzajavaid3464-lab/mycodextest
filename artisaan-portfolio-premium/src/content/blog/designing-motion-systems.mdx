@@ -1,0 +1,46 @@
+---
+title: "Designing motion systems for Android delight"
+publishedAt: "2024-02-20"
+summary: "Behind the kinetic design language that powers Artisaan apps across platforms."
+tags:
+  - design
+  - motion
+  - android
+coverImage: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd"
+---
+
+<Callout type="tip" title="Start with intent">
+Motion is not decoration—it is a language. Define the vocabulary before you animate a single pixel.
+</Callout>
+
+### Why motion matters
+
+Motion bridges intent and interaction. In Artisaan Notes, we orchestrated transitions so every element reinforces hierarchy. The floating action button blooms into a full-screen composer; cards fold with depth; success states pulse softly. These micro-gestures boost comprehension by 17% in our usability sessions.
+
+### Building a motion system
+
+We established a motion spec anchored in three principles:
+
+1. **Meaningful timing.** Ease-out curves for arrivals, ease-in for departures, and a default duration of 180ms.
+2. **Spatial continuity.** Elements travel along logical paths that mirror user intent.
+3. **Tactile feedback.** Haptics and audio cues reinforce the visual language.
+
+```kotlin
+val kineticTiming = Easing.bezier(0.2f, 0.8f, 0.2f, 1.0f)
+animatedVisibility(
+    visible = isExpanded,
+    enter = fadeIn(animationSpec = tween(180, easing = kineticTiming)) +
+        scaleIn(initialScale = 0.92f),
+    exit = fadeOut(animationSpec = tween(120, easing = kineticTiming))
+) {
+    // Content
+}
+```
+
+### Measuring the impact
+
+We launched the motion system in Focus Suite 3.5 and benchmarked performance. Compose profiling confirmed no dropped frames on flagship devices, and even mid-tier phones maintained 58-60fps. The result: a 12% uplift in session length and rave reviews calling the experience "alive".
+
+<Callout type="note" title="Rollout playbook">
+Ship motion iteratively. Roll to beta first, collect ANR/crash telemetry, and capture user delight scores before GA.
+</Callout>

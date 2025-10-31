@@ -1,0 +1,5 @@
+module.exports = {
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://artisaan.dev',
+  generateRobotsTxt: true,
+  sitemapSize: 7000,
+};

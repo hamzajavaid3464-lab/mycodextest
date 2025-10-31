@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+.DS_Store
+artifacts
+coverage
+playwright-report
+public/sw.js
+public/workbox-*.js
