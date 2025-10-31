@@ -1,0 +1,162 @@
+[
+  {
+    "slug": "artisaan-notes",
+    "name": "Artisaan Notes",
+    "category": "Productivity",
+    "description": "Beautiful, fast note-taking with offline-first sync and markdown.",
+    "features": ["Offline first", "Markdown", "Sync across devices"],
+    "rating": 4.8,
+    "installs": "250K+",
+    "priceModel": "Free with IAP",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.artisaan.notes",
+    "images": [
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "https://images.unsplash.com/photo-1587613865524-01a8d1a5941f"
+    ],
+    "privacyPolicyUrl": "/privacy",
+    "releaseDate": "2022-03-14",
+    "monetization": ["Free", "IAP"],
+    "techStack": ["Kotlin", "Jetpack Compose", "Room"],
+    "supportEmail": "notes@artisaan.dev"
+  },
+  {
+    "slug": "focus-suite",
+    "name": "Focus Suite",
+    "category": "Productivity",
+    "description": "Intentional focus timer, ambient soundscapes, and streaks.",
+    "features": ["Pomodoro", "Deep focus audio", "Stats"],
+    "rating": 4.9,
+    "installs": "500K+",
+    "priceModel": "Subscription",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.artisaan.focus",
+    "images": [
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+    ],
+    "privacyPolicyUrl": "/privacy",
+    "releaseDate": "2021-11-02",
+    "monetization": ["Subscription", "Trials"],
+    "techStack": ["Kotlin", "Coroutines", "Hilt"],
+    "supportEmail": "focus@artisaan.dev"
+  },
+  {
+    "slug": "pulse-weather",
+    "name": "Pulse Weather",
+    "category": "Weather",
+    "description": "Hyperlocal forecasts, beautiful radar, and contextual alerts.",
+    "features": ["Radar", "Widgets", "Severe alerts"],
+    "rating": 4.7,
+    "installs": "320K+",
+    "priceModel": "Free with Ads",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.artisaan.weather",
+    "images": [
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+      "https://images.unsplash.com/photo-1502303756765-82c6da5fef8f"
+    ],
+    "privacyPolicyUrl": "/privacy",
+    "releaseDate": "2020-08-19",
+    "monetization": ["Ads", "Premium upgrade"],
+    "techStack": ["Kotlin", "Compose", "OpenWeather"],
+    "supportEmail": "weather@artisaan.dev"
+  },
+  {
+    "slug": "serene-sleep",
+    "name": "Serene Sleep",
+    "category": "Health & Fitness",
+    "description": "Personalized sleep coaching backed by circadian science.",
+    "features": ["Sleep stories", "Smart alarms", "Insights"],
+    "rating": 4.9,
+    "installs": "410K+",
+    "priceModel": "Free with IAP",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.artisaan.sleep",
+    "images": [
+      "https://images.unsplash.com/photo-1526402469776-493c5c4e3aa1",
+      "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1"
+    ],
+    "privacyPolicyUrl": "/privacy",
+    "releaseDate": "2022-09-28",
+    "monetization": ["Free", "IAP"],
+    "techStack": ["Kotlin", "ML Kit", "Firebase"],
+    "supportEmail": "sleep@artisaan.dev"
+  },
+  {
+    "slug": "atelier-camera",
+    "name": "Atelier Camera",
+    "category": "Photography",
+    "description": "Manual controls, RAW capture, and cinematic color profiles.",
+    "features": ["Manual controls", "RAW", "LUTs"],
+    "rating": 4.6,
+    "installs": "150K+",
+    "priceModel": "Paid",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.artisaan.camera",
+    "images": [
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32"
+    ],
+    "privacyPolicyUrl": "/privacy",
+    "releaseDate": "2019-05-15",
+    "monetization": ["Paid"],
+    "techStack": ["Kotlin", "CameraX", "NDK"],
+    "supportEmail": "camera@artisaan.dev"
+  },
+  {
+    "slug": "artisan-reader",
+    "name": "Artisan Reader",
+    "category": "Education",
+    "description": "Elegant offline reader for longform journalism and research.",
+    "features": ["Sync", "Annotations", "Immersive mode"],
+    "rating": 4.8,
+    "installs": "220K+",
+    "priceModel": "Free",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.artisaan.reader",
+    "images": [
+      "https://images.unsplash.com/photo-1458696765561-3ae71177aa13",
+      "https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea"
+    ],
+    "privacyPolicyUrl": "/privacy",
+    "releaseDate": "2023-02-12",
+    "monetization": ["Free"],
+    "techStack": ["Kotlin", "Compose", "Apollo GraphQL"],
+    "supportEmail": "reader@artisaan.dev"
+  },
+  {
+    "slug": "horizon-wallet",
+    "name": "Horizon Wallet",
+    "category": "Finance",
+    "description": "Secure budgeting, realtime exchange rates, and travel mode.",
+    "features": ["Budgeting", "Security", "Travel mode"],
+    "rating": 4.5,
+    "installs": "180K+",
+    "priceModel": "Subscription",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.artisaan.wallet",
+    "images": [
+      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
+      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a"
+    ],
+    "privacyPolicyUrl": "/privacy",
+    "releaseDate": "2021-01-08",
+    "monetization": ["Subscription"],
+    "techStack": ["Kotlin", "Ktor", "SQLDelight"],
+    "supportEmail": "wallet@artisaan.dev"
+  },
+  {
+    "slug": "muse-habits",
+    "name": "Muse Habits",
+    "category": "Lifestyle",
+    "description": "Playful habit loops with mindful nudges and streak rituals.",
+    "features": ["Playful streaks", "Widgets", "Community"],
+    "rating": 4.7,
+    "installs": "140K+",
+    "priceModel": "Free with IAP",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.artisaan.habits",
+    "images": [
+      "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
+      "https://images.unsplash.com/photo-1483721310020-03333e577078"
+    ],
+    "privacyPolicyUrl": "/privacy",
+    "releaseDate": "2020-04-17",
+    "monetization": ["Free", "IAP"],
+    "techStack": ["Kotlin", "Firebase", "Compose"],
+    "supportEmail": "habits@artisaan.dev"
+  }
+]
