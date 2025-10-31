@@ -1,0 +1,37 @@
+---
+title: "The Artisaan blueprint for Android accessibility"
+publishedAt: "2023-11-18"
+summary: "Design principles and engineering tactics that keep our portfolio inclusive."
+tags:
+  - accessibility
+  - android
+  - craft
+coverImage: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+---
+
+Accessibility is a mindset, not a checklist. We embed inclusive design from planning to production.
+
+### Inclusive discovery
+
+We run structured interviews with voice assistant users, low-vision testers, and neurodiverse participants. Insights shape the backlog before we design a single screen.
+
+### Engineering guardrails
+
+- Compose semantics ensure every component exposes meaningful labels and state.
+- Dynamic type scales gracefully with custom typography tokens.
+- Color contrast lives in our design tokens, validated via automated tests.
+
+```kotlin
+Modifier.semantics {
+    contentDescription = "Play soundscape"
+    role = Role.Button
+}
+```
+
+### Testing rigor
+
+Every release includes automated accessibility checks in Espresso, manual TalkBack runs, and color-blindness simulations. The result: a portfolio that scores 100% on internal a11y audits.
+
+<Callout type="note" title="Keep learning">
+We publish internal accessibility learnings in quarterly share-outs to keep the whole studio aligned.
+</Callout>
