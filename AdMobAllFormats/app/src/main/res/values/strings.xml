@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AdMob Formats Showcase</string>
+    <string name="banner_card_title">Adaptive Banner</string>
+    <string name="interstitial_card_title">Interstitial</string>
+    <string name="rewarded_card_title">Rewarded</string>
+    <string name="rewarded_interstitial_card_title">Rewarded Interstitial</string>
+    <string name="native_card_title">Native</string>
+    <string name="load_button">Load</string>
+    <string name="show_button">Show</string>
+    <string name="status_loaded">Ad loaded</string>
+    <string name="status_failed">Ad failed: %1$s</string>
+    <string name="reward_toast">Reward: %1$s %2$d</string>
+    <string name="native_loaded">Native ad loaded</string>
+    <string name="native_failed">Native ad failed: %1$s</string>
+    <string name="banner_description">Anchored adaptive banner using XML AdView</string>
+    <string name="interstitial_description">Load then show interstitial ad</string>
+    <string name="rewarded_description">Load rewarded ad and display reward in toast</string>
+    <string name="rewarded_interstitial_description">Load rewarded interstitial ad and display reward in toast</string>
+    <string name="native_description">Load native ad and populate card template</string>
+</resources>
