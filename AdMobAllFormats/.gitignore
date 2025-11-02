@@ -1,0 +1,12 @@
+# Gradle
+.gradle/
+build/
+app/build/
+gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+
+# Misc
+local.properties
